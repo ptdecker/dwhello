@@ -1,1 +1,6 @@
+com/ligo/dwhello/DwHelloConfiguration.class
+com/ligo/dwhello/resources/DwHelloResource.class
 com/ligo/dwhello/DwHello.class
+com/ligo/dwhello/DwHelloApplication.class
+com/ligo/dwhello/health/TemplateHealthCheck.class
+com/ligo/dwhello/core/Saying.class
