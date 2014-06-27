@@ -1,0 +1,1000 @@
+ 1011  ./run.sh
+ 1012  fc -l
+ 1013  fc -ln
+ 1014  git status
+ 1015  git add -A
+ 1016  git commit -m "Updated README.md"
+ 1017  git push origin master
+ 1018  git add -A
+ 1019  git commit -m "Updated README.md"
+ 1020  git push origin master
+ 1021  ls
+ 1022  cd ..
+ 1023  ls
+ 1024  cd jline2
+ 1025  ls
+ 1026  ls target
+ 1027  cd ..
+ 1028  mvn archetype:generate -DgroupId=com.ligo.ligomcp -DartifactID=ligomcp -DarchetypeArtifactId=maven-archetype-simple -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DinteractiveMode=false
+ 1029  ls
+ 1030  mvn archetype:generate -DgroupId=com.ligo.ligomcp -DartifactID=ligomcp -DarchetypeArtifactId=maven-archetype-quickstart -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DinteractiveMode=false
+ 1031  mvn archetype:generate -DgroupId=com.ligo.ligomcp -DartifactId=ligomcp -DarchetypeArtifactId=maven-archetype-quickstart -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DinteractiveMode=false
+ 1032  ls
+ 1033  cd ligomcp
+ 1034  git init
+ 1035  git remove add origin https://github.com/LigoSphere/ligomcp.git
+ 1036  git remote add origin https://github.com/LigoSphere/ligomcp.git
+ 1037  git pull origin master
+ 1038  git status
+ 1039  git add -A
+ 1040  mvn package
+ 1041  pico ligomcp.sh
+ 1042  ls
+ 1043  chmod 700 ligomcp.sh
+ 1044  ls
+ 1045  ./ligomcp.sh
+ 1046  git add -A
+ 1047  git commit -m "Initial commit"
+ 1048  git push origin master
+ 1049  cd ..
+ 1050  rm -rdfv ligomcp
+ 1051  mvn archetype:generate -DgroupId=com.ligo.ligomcp -DartifactID=ligomcp -DarchetypeArtifactId=maven-archetype-quickstart -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DinteractiveMode=false
+ 1052  mvn archetype:generate -DgroupId=com.ligo.ligomcp -DartifactId=ligomcp -DarchetypeArtifactId=maven-archetype-quickstart -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DinteractiveMode=false
+ 1053  cd ligomcp
+ 1054  git init
+ 1055  git remote add origin https://github.com/LigoSphere/LigoMCP.git
+ 1056  git pull origin master
+ 1057  ls
+ 1058  cd src
+ 1059  ls
+ 1060  cd main
+ 1061  ls
+ 1062  cd java
+ 1063  ls
+ 1064  cd com
+ 1065  ls
+ 1066  cd ligo
+ 1067  ls
+ 1068  cd ligomcp
+ 1069  ls
+ 1070  mv App.java LigoMCP.java
+ 1071  pico LigoMCP.java
+ 1072  cd ~/code/ligomcp/test/main/java/com/ligo/ligomcp
+ 1073  cd ~/code
+ 1074  cd ligomcp
+ 1075  ls
+ 1076  cd src
+ 1077  ls
+ 1078  cd test
+ 1079  cd java/com/ligo/ligomcp
+ 1080  ls
+ 1081  mv AppTest.java LigoMCPTest.java
+ 1082  pico LigoMCPTest.java
+ 1083  cd ~/code/ligomcp
+ 1084  ls
+ 1085  cat pom.xml
+ 1086  mvp package
+ 1087  mvn package
+ 1088  ls
+ 1089  pico pom.xml
+ 1090  mvn package
+ 1091  pico ligomcp.sh
+ 1092  chmod 700 ligomcp.sh
+ 1093  ./ligomcp.sh
+ 1094  git add -A
+ 1095  git commit -m "Initial commit"
+ 1096  git push origin master
+ 1097  git add -A
+ 1098  git commint -m "Updated README.md to provide getting started instructions"
+ 1099  git commit -m "Updated README.md to provide getting started instructions"
+ 1100  git push origin master
+ 1101  git checkout -b readline
+ 1102  git push -u origin readline
+ 1103  mvn package
+ 1104  ligo status
+ 1105  git status
+ 1106  git add -A
+ 1107  git commit -m "continuing to add readline functionality"
+ 1108  git status
+ 1109  git push origin readline
+ 1110  git checkout master
+ 1111  git pull origin master
+ 1112  ./ligoMCP.sh
+ 1113  ls
+ 1114  ./ligomcp.sh
+ 1115  mvn package
+ 1116  ./ligomcp.sh
+ 1117  git status
+ 1118  git add -A
+ 1119  git commit -m "modified gitignore"
+ 1120  git push origin master
+ 1121  git status
+ 1122  git checkout readline
+ 1123  mvn package
+ 1124  mvn package -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -B
+ 1125  mvn package -e -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -B
+ 1126  ./ligomcp.sh
+ 1127  mvn package -e -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -B
+ 1128  ./ligomcp.sh
+ 1129  mvn exec:java -D exec.mainClass=LigoMCP
+ 1130  mvn package -e -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -B
+ 1131  ./ligomcp.sh
+ 1132  mvn package
+ 1133  mvn package -e -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -B
+ 1134  ./ligomcp.sh
+ 1135  mvn package
+ 1136  ./ligomcp.sh
+ 1137  mvn package
+ 1138  ./ligomcp.sh
+ 1139  mvn package
+ 1140  ./ligomcp.sh
+ 1141  mvn package
+ 1142  ./ligomcp.sh
+ 1143  mvn package
+ 1144  ./ligomcp.sh
+ 1145  mvn package
+ 1146  ./ligomcp.sh
+ 1147  git status
+ 1148  git add -A
+ 1149  git commit -m "Added basic REPL and implemented 'quit' using JLine2 'readline' library"
+ 1150  git push origin readline
+ 1151  git status
+ 1152  git checkout master
+ 1153  git merge readline
+ 1154  git status
+ 1155  git mergetool
+ 1156  git add -A
+ 1157  git commit -m "Fixed merge conflicts"
+ 1158  git status
+ 1159  git push origin master
+ 1160  git branch -d readline
+ 1161  git push origin :readline
+ 1162  ./ligomcp.sh
+ 1163  mvn package
+ 1164  ./ligomcp.sh
+ 1165  mvn package
+ 1166  ./ligomcp.sh
+ 1167  mvn package
+ 1168  ./ligomcp.sh
+ 1169  mvn package
+ 1170  ./ligomcp.sh
+ 1171  mvn package
+ 1172  ./ligomcp.sh
+ 1173  exit
+ 1174  vtop
+ 1175  exit
+ 1176  vmux
+ 1177  tmux
+ 1178  exit
+ 1179  cd code/c/lispy
+ 1180  ls
+ 1181  ./build.sh
+ 1182  l
+ 1183  mv sexpress.c eexpress.c
+ 1184  mv sexpress.c eexpress
+ 1185  ./build.sh eexpress
+ 1186  ./eexpress
+ 1187  ./build.sh eexpress
+ 1188  ./eexpress
+ 1189  ./build.sh eexpress
+ 1190  ./eexpress
+ 1191  ./build.sh eexpress
+ 1192  ./eexpress
+ 1193  ./build.sh eexpress
+ 1194  ./eexpress
+ 1195  ./build.sh eexpress
+ 1196  ./eexpress
+ 1197  ls
+ 1198  rm sexpress.c
+ 1199  rm sexpress
+ 1200  rm eexpress
+ 1201  rm sexpress
+ 1202  ls
+ 1203  git status
+ 1204  git add -A
+ 1205  git commit -m "Added q-expression support"
+ 1206  git push origin master
+ 1207  ./build.sh eexpress
+ 1208  ./eexpress
+ 1209  ./build.sh eexpress
+ 1210  ./eexpress
+ 1211  ls
+ 1212  rm eexpress
+ 1213  git add -A
+ 1214  git commit -m "Added ability to handle built in q-expression functions 'list', 'head', 'tail', 'join', and 'eval'"
+ 1215  git push origin master
+ 1216  exit
+ 1217  cd code\c\lispy
+ 1218  cd code/c/lispy
+ 1219  ls
+ 1220  ./build.sh
+ 1221  ls
+ 1222  ./build.sh eexpress
+ 1223  ls
+ 1224  ./eexpress
+ 1225  git status
+ 1226  git add -A
+ 1227  git commit -m "
+ 1228  Started adding 'cons' built-in fuction"
+ 1229  git push origin master
+ 1230  telnet lambda.moo.mud.org:8888
+ 1231  telnet lambda.moo.mud.org
+ 1232  man telnet
+ 1233  telnet lambda.moo.mud.org 8888
+ 1234  exit
+ 1235  ./build.sh eexpress
+ 1236  cd code/c
+ 1237  ls
+ 1238  cd lispy
+ 1239  ./build.sh eexpress
+ 1240  ./eexpress
+ 1241  git status
+ 1242  rm express
+ 1243  rm express.
+ 1244  ls
+ 1245  rm eexpress
+ 1246  git add -A
+ 1247  git commit -m "Added the scaffold for the 'len' funtion
+ 1248  "
+ 1249  git push origin master
+ 1250  ./build.sh eexpress
+ 1251  cd code/c/lispy
+ 1252  ./build.sh eexpress
+ 1253  ./eexpress
+ 1254  ./build.sh eexpress
+ 1255  ./eexpress
+ 1256  ./build.sh eexpress
+ 1257  ./eexpress
+ 1258  ./build.sh eexpress
+ 1259  ./eexpress
+ 1260  ./build.sh eexpress
+ 1261  ./eexpress
+ 1262  ./build.sh eexpress
+ 1263  ./eexpress
+ 1264  ./build.sh eexpress
+ 1265  ./eexpress
+ 1266  ./build.sh eexpress
+ 1267  ./eexpress
+ 1268  ./build.sh eexpress
+ 1269  ./eexpress
+ 1270  ./build.sh eexpress
+ 1271  ./eexpress
+ 1272  ./build.sh eexpress
+ 1273  ./eexpress
+ 1274  ./build.sh eexpress
+ 1275  ./eexpress
+ 1276  ./build.sh eexpress
+ 1277  ./eexpress
+ 1278  ./build.sh eexpress
+ 1279  ./eexpress
+ 1280  ./build.sh eexpress
+ 1281  ./eexpress
+ 1282  git status
+ 1283  git add -a
+ 1284  git add eexpress.c
+ 1285  git commit -m "completed 'cons' and 'len' functions"
+ 1286  git push origin master
+ 1287  ./eexpress
+ 1288  git push origin master
+ 1289  ./build.sh eexpress
+ 1290  ./eexpress
+ 1291  ./build.sh eexpress
+ 1292  ./eexpress
+ 1293  ./build.sh eexpress
+ 1294  ./eexpress
+ 1295  git status
+ 1296  git add eexpress.c
+ 1297  git commit -m "added 'init' built-in fuction"
+ 1298  git push origin master
+ 1299  ./build.sh eexpress
+ 1300  clear
+ 1301  ./build.sh eexpress
+ 1302  clear
+ 1303  ./build.sh eexpress
+ 1304  clear
+ 1305  ./build.sh eexpress
+ 1306  clear
+ 1307  ./build.sh eexpress
+ 1308  clear
+ 1309  ./build.sh eexpress
+ 1310  clear
+ 1311  ./build.sh eexpress
+ 1312  clear
+ 1313  ./build.sh eexpress
+ 1314  ./eexpress
+ 1315  ./build.sh eexpress
+ 1316  ./eexpress
+ 1317  ./build.sh eexpress
+ 1318  ./eexpress
+ 1319  ./build.sh eexpress
+ 1320  ./eexpress
+ 1321  ./build.sh eexpress
+ 1322  ./eexpress
+ 1323  ./build.sh eexpress
+ 1324  ./eexpress
+ 1325  ./build.sh eexpress
+ 1326  ./eexpress
+ 1327  ./build.sh eexpress
+ 1328  ./eexpress
+ 1329  ./build.sh eexpress
+ 1330  ./eexpress
+ 1331  ls
+ 1332  mv eexpress.c variables.c
+ 1333  rm eexpress
+ 1334  git status
+ 1335  git add -A
+ 1336  git commit -m "Added the ability to define variables and user functions. Improved error handling."
+ 1337  git push origin master
+ 1338  ./build.sh variables
+ 1339  ./variables
+ 1340  ./build.sh variables
+ 1341  ./variables
+ 1342  ./build.sh variables
+ 1343  ./variables
+ 1344  ./build.sh variables
+ 1345  ./variables
+ 1346  ./build.sh variables
+ 1347  ./variables
+ 1348  ./build.sh variables
+ 1349  ./variables
+ 1350  ./build.sh variables
+ 1351  ./variables
+ 1352  ./build.sh variables
+ 1353  ./variables
+ 1354  ./build.sh variables
+ 1355  ./variables
+ 1356  ./build.sh variables
+ 1357  ./variables
+ 1358  ./build.sh variables
+ 1359  ./variables
+ 1360  ./build.sh variables
+ 1361  ./variables
+ 1362  ./build.sh variables
+ 1363  ./variables
+ 1364  ./build.sh variables
+ 1365  ./variables
+ 1366  ./build.sh variables
+ 1367  ./variables
+ 1368  ./build.sh variables
+ 1369  ./variables
+ 1370  ./build.sh variables
+ 1371  ./variables
+ 1372  ./build.sh variables
+ 1373  ./variables
+ 1374  ./build.sh variables
+ 1375  ./variables
+ 1376  ./build.sh variables
+ 1377  ./variables
+ 1378  ./build.sh variables
+ 1379  ./variables
+ 1380  ./build.sh variables
+ 1381  ./variables
+ 1382  ./build.sh variables
+ 1383  ./variables
+ 1384  ./build.sh variables
+ 1385  ./variables
+ 1386  ./build.sh variables
+ 1387  ./variables
+ 1388  ./build.sh variables
+ 1389  ./variables
+ 1390  ./build.sh variables
+ 1391  ./variables
+ 1392  ./build.sh variables
+ 1393  cat build.sh
+ 1394  gdb variables
+ 1395  ./build.sh variables
+ 1396  ./variables
+ 1397  gdb variables
+ 1398  ./build.sh variables
+ 1399  gdb variables
+ 1400  ./build.sh variables
+ 1401  ./variables
+ 1402  gdb variables
+ 1403  ./variables
+ 1404  ./build.sh variables
+ 1405  ./variables
+ 1406  ./build.sh variables
+ 1407  ./variables
+ 1408  ./build.sh variables
+ 1409  ./variables
+ 1410  git status
+ 1411  rm eexpress.c
+ 1412  rm variables
+ 1413  git add -A
+ 1414  git commit -m "Added function 'vars' to list defined variables and functions"
+ 1415  git push origin master
+ 1416  ./build.sh variables
+ 1417  ./variables
+ 1418  ./build.sh variables
+ 1419  ./variables
+ 1420  ./build.sh variables
+ 1421  ./variables
+ 1422  ./build.sh variables
+ 1423  ./variables
+ 1424  ./build.sh variables
+ 1425  ./variables
+ 1426  ./build.sh variables
+ 1427  ./variables
+ 1428  ./build.sh variables
+ 1429  ./variables
+ 1430  ./build.sh variables
+ 1431  ./variables
+ 1432  ./build.sh variables
+ 1433  ./variables
+ 1434  ./build.sh variables
+ 1435  ./variables
+ 1436  ./build.sh variables
+ 1437  ./variables
+ 1438  ./build.sh variables
+ 1439  ./variables
+ 1440  ./build.sh variables
+ 1441  ./variables
+ 1442  ./build.sh variables
+ 1443  ./variables
+ 1444  ./build.sh variables
+ 1445  ./variables
+ 1446  ./build.sh variables
+ 1447  ./variables
+ 1448  ./build.sh variables
+ 1449  ./variables
+ 1450  ./build.sh variables
+ 1451  ./variables
+ 1452  ./build.sh variables
+ 1453  ./variables
+ 1454  ./build.sh variables
+ 1455  ./variables
+ 1456  ./build.sh variables
+ 1457  ./variables
+ 1458  ./build.sh variables
+ 1459  ./variables
+ 1460  ./build.sh variables
+ 1461  ./variables
+ 1462  ./build.sh variables
+ 1463  ./variables
+ 1464  ./build.sh variables
+ 1465  ./variables
+ 1466  gdb variables
+ 1467  ./variables
+ 1468  ./build.sh variables
+ 1469  ./variables
+ 1470  ./build.sh variables
+ 1471  ./variables
+ 1472  ./build.sh variables
+ 1473  ./variables
+ 1474  ./build.sh variables
+ 1475  ./variables
+ 1476  ./build.sh variables
+ 1477  ./variables
+ 1478  ./build.sh variables
+ 1479  ./variables
+ 1480  ./build.sh variables
+ 1481  ./variables
+ 1482  ./build.sh variables
+ 1483  ./variables
+ 1484  ./build.sh variables
+ 1485  ./variables
+ 1486  ./build.sh variables
+ 1487  ./variables
+ 1488  git status
+ 1489  rm variables
+ 1490  git add -A
+ 1491  git commit -m "Added 'vars' function to list all built-in and defined functions and variables. Added checks to prevent redefinition of built-in functions. And, implemented 'quit' function"
+ 1492  git push origin master
+ 1493  git commit --amend
+ 1494  git push --force origin master
+ 1495  ./build.sh variables
+ 1496  cd code/c/lispy
+ 1497  ./build.sh variables
+ 1498  clear
+ 1499  ./build.sh variables
+ 1500  clear
+ 1501  ./build.sh variables
+ 1502  clear
+ 1503  ./build.sh variables
+ 1504  clear
+ 1505  ./build.sh variables
+ 1506  clear
+ 1507  ./build.sh variables
+ 1508  ./variables
+ 1509  ./build.sh variables
+ 1510  ./variables
+ 1511  gcb variables
+ 1512  gdb variables
+ 1513  ./build.sh variables
+ 1514  ./variables
+ 1515  gdb variables
+ 1516  ./build.sh variables
+ 1517  ./variables
+ 1518  gdb variables
+ 1519  ./build.sh variables
+ 1520  clear
+ 1521  ./build.sh variables
+ 1522  clear
+ 1523  ./build.sh variables
+ 1524  clear
+ 1525  ./build.sh variables
+ 1526  ./variables
+ 1527  ./build.sh variables
+ 1528  ./variables
+ 1529  ./build.sh variables
+ 1530  ./variables
+ 1531  gdb variables
+ 1532  ./build.sh variables
+ 1533  ./variables
+ 1534  ./build.sh variables
+ 1535  ./variables
+ 1536  ./build.sh variables
+ 1537  ./variables
+ 1538  ./build.sh variables
+ 1539  ./variables
+ 1540  gdb variables
+ 1541  ./variables
+ 1542  ./build.sh variables
+ 1543  ./variables
+ 1544  ./build.sh variables
+ 1545  ./variables
+ 1546  ./build.sh variables
+ 1547  ./variables
+ 1548  ./build.sh variables
+ 1549  ./variables
+ 1550  ./build.sh variables
+ 1551  ./variables
+ 1552  ./build.sh variables
+ 1553  ./variables
+ 1554  ./build.sh variables
+ 1555  ./variables
+ 1556  ./build.sh variables
+ 1557  ./variables
+ 1558  ./build.sh variables
+ 1559  ./variables
+ 1560  ./build.sh variables
+ 1561  ./variables
+ 1562  ./build.sh variables
+ 1563  ./variables
+ 1564  ls
+ 1565  rm variables
+ 1566  mv variables.c functions.c
+ 1567  git status
+ 1568  git add -A
+ 1569  git commit -m "Added basic ability to define function. Had to remove approach to prevent redefining built-in functions"
+ 1570  git push origin master
+ 1571  ./build.sh variables
+ 1572  ./build.sh functions
+ 1573  ./functions
+ 1574  ./build.sh functions
+ 1575  ./functions
+ 1576  ls
+ 1577  git status
+ 1578  rm functions.
+ 1579  git status
+ 1580  rm functions
+ 1581  git add -A
+ 1582  git commit -m "Finished up functions capabilities"
+ 1583  git push origin master
+ 1584  ./build.sh functions
+ 1585  ./functions
+ 1586  ./build.sh functions
+ 1587  ./functions
+ 1588  ls
+ 1589  rm functions
+ 1590  mv functions.c conditionals.c
+ 1591  git status
+ 1592  git add -A
+ 1593  git commit -m "Added ordering comparisions, equality comparisions, and if conditional"
+ 1594  git push origin master
+ 1595  quit
+ 1596  exit
+ 1597  cd fcode
+ 1598  cd code
+ 1599  ls
+ 1600  cd ligomcp\
+ 1601  ls
+ 1602  ./ligomcp.sh
+ 1603  cd ~/code/c/lispy
+ 1604  ls
+ 1605  ./build.sh conditionals.c
+ 1606  ./build.sh conditionals
+ 1607  ./conditionals
+ 1608  clear
+ 1609  cd..
+ 1610  cd ~/code
+ 1611  ls
+ 1612  cd java
+ 1613  ls
+ 1614  ./ligomcp.sh
+ 1615  ls
+ 1616  cat installations.csv | more
+ 1617  ./ligomcp.sh
+ 1618  ls
+ 1619  cd ../ligomcp
+ 1620  git status
+ 1621  mvn package
+ 1622  git add -A
+ 1623  git commit -m "Moving things forward"
+ 1624  git push origin master
+ 1625  exit
+ 1626  cd code
+ 1627  mkdir jobs
+ 1628  mv jobs ligojobs
+ 1629  cd ligojobs
+ 1630  git init
+ 1631  git remote add origin https://github.com/LigoSphere/jobs.git
+ 1632  git remote -v
+ 1633  git pull origin master
+ 1634  ls
+ 1635  emacs README.md
+ 1636  git status
+ 1637  git add -A
+ 1638  git commit -m "Initial post-fork commit"
+ 1639  git push origin master
+ 1640  emacs README.md
+ 1641  git add -A
+ 1642  git commit -m "Fixed some minor formatting and link issues"
+ 1643  git push origin master
+ 1644  cd ../c/lispy
+ 1645  ls
+ 1646  ./build.sh conditionals
+ 1647  ./conditionals
+ 1648  ./build.sh conditionals
+ 1649  ./conditionals
+ 1650  ./build.sh conditionals
+ 1651  ./conditionals
+ 1652  ./build.sh conditionals
+ 1653  ./conditionals
+ 1654  ./build.sh conditionals
+ 1655  ./conditionals
+ 1656  ./build.sh conditionals
+ 1657  ./conditionals
+ 1658  ./build.sh conditionals
+ 1659  ./conditionals
+ 1660  ./build.sh conditionals
+ 1661  ./conditionals
+ 1662  quit
+ 1663  git add -A
+ 1664  git commit -m
+ 1665  git commit
+ 1666  git push origin master
+ 1667  ./conditionals
+ 1668  ./build.sh conditionals
+ 1669  ./conditionals
+ 1670  ./build.sh conditionals
+ 1671  ./conditionals
+ 1672  git add -A
+ 1673  git commit -m "Added 'and' and 'or' boolean functions acting on numbers"
+ 1674  git push origin master
+ 1675  putty
+ 1676  sudo apt-get install putty
+ 1677  ls
+ 1678  chmod 400 ligodecker.pem
+ 1679  ssh -i ligodecker.pem ubuntu@54.88.52.88
+ 1680  ls
+ 1681  ssh -i ligodecker.pem ubuntu@54.88.52.88
+ 1682  ls
+ 1683  sudo apt-get install postgres
+ 1684  sudo apt-get install postgresql postgresql-contrib
+ 1685  sudo apt-get install pgadmin3
+ 1686  apt-cache search postgres
+ 1687  sudo -u postgres psql postgres
+ 1688  sudo -u postgres createdb mydb
+ 1689  sudo -u postgres psql
+ 1690  pgadmin3
+ 1691  sudo nano /etc/postgresql/9.3/main/pg_hba.conf
+ 1692  sudo /etc/init.d/postgresql reload
+ 1693  pgadmin3
+ 1694  createdb scratch2
+ 1695  createuser ptdecker
+ 1696  createdb scratch2
+ 1697  psql
+ 1698  psql --username=ptdecker
+ 1699  psql sscratch2
+ 1700  psql scratch
+ 1701  psql scratch2
+ 1702  dropdb scratch2
+ 1703  dropdb mydb
+ 1704  dropdb postgres
+ 1705  createdb
+ 1706  psql
+ 1707  dropdb
+ 1708  dropdb ptdecker
+ 1709  createdb scratch
+ 1710  psql -user
+ 1711  psql --username=scratch
+ 1712  dropdb scratch
+ 1713  createdb ptdecker
+ 1714  psql
+ 1715  ls
+ 1716  cd code
+ 1717  ls
+ 1718  cd ligomcp
+ 1719  ls
+ 1720  cat pom.xml | more
+ 1721  ./build.sh conditionals
+ 1722  cd code/c/lispy
+ 1723  ./build.sh conditionals
+ 1724  ./conditionals
+ 1725  ./build.sh conditionals
+ 1726  ./conditionals
+ 1727  ./build.sh conditionals
+ 1728  ./conditionals
+ 1729  ./build.sh conditionals
+ 1730  ./conditionals
+ 1731  ./build.sh conditionals
+ 1732  ./conditionals
+ 1733  git add -A
+ 1734  git commit -m "Added boolean number type"
+ 1735  git push origin master
+ 1736  ls
+ 1737  ssh -i ligodecker.pem ubuntu@54.88.52.88
+ 1738  pgadmin3
+ 1739  ls
+ 1740  pgadmin3
+ 1741  ps
+ 1742  ssh -i ligodecker.pem ubuntu@54.88.52.88
+ 1743  psql --host=ligo-db.chy8oazdyc1c.us-east-1.rds.amazonaws.com --port=5432 --username=ligodbadmin --password --dbname=ligoproddb
+ 1744  psql
+ 1745  ls
+ 1746  cd code
+ 1747  ls
+ 1748  cd java
+ 1749  ls
+ 1750  history > ligodb.sh
+ 1751  emacs ligodb.sh
+ 1752  ls
+ 1753  chmod 777 ligodb.sh
+ 1754  ./ligodb.sh
+ 1755  die
+ 1756  chmod 777 ligodb.sh
+ 1757  emacs ligodb.sh
+ 1758  ./ligodb.sh
+ 1759  ./ligodb.sh dev
+ 1760  ./ligodb.sh prod
+ 1761  ./ligodb.sh xyz
+ 1762  emacs ligodb.sh
+ 1763  ./ligodb.sh xyz
+ 1764  ./ligodb.sh
+ 1765  ./ligodb.sh xyz
+ 1766  ./ligodb.sh dev
+ 1767  emacs ligodb.sh
+ 1768  ./ligodb.sh dev
+ 1769  emacs ligodb.sh
+ 1770  ./ligodb.sh dev
+ 1771  ./ligodb.sh xxx
+ 1772  emacs ligodb.sh
+ 1773  ./ligodb.sh xxx
+ 1774  emacs ligodb.sh
+ 1775  ./ligodb.sh xxx
+ 1776  ./ligodb.sh prod
+ 1777  echo dev
+ 1778  echo dev grep -e ^(dev|prod)$
+ 1779  echo dev grep -e '^(dev|prod)$'
+ 1780  echo dev | grep -e '^(dev|prod)$'
+ 1781  echo dev | echo grep -e '^(dev|prod)$'
+ 1782  echo dev | grep -e '^(dev|prod)$'
+ 1783  echo dev | grep -e '^(dev|prod)$' || echo true
+ 1784  echo xxx | grep -e '^(dev|prod)$' || echo true
+ 1785  echo xxx | grep -e '^(dev|prod)$' && echo true
+ 1786  echo dev | grep -e '^(dev|prod)$' && echo true
+ 1787  emacs ligodb.sh
+ 1788  ./ligodb.sh prod
+ 1789  emacs ligodb.sh
+ 1790  ./ligodb.sh prod
+ 1791  emacs ligodb.sh
+ 1792  ./ligodb.sh prod
+ 1793  emacs ligodb.sh
+ 1794  ./ligodb.sh prod
+ 1795  ./ligodb.sh dev
+ 1796  emacs ligodb.sh
+ 1797  ./ligodb.sh dev
+ 1798  ./ligodb.sh prod
+ 1799  emacs ligodb.sh
+ 1800  ./ligodb.sh prod
+ 1801  emacs ligodb.sh
+ 1802  ./ligodb.sh prod
+ 1803  ./ligodb.sh dev
+ 1804  emacs ligodb.sh
+ 1805  ./ligodb.sh dev
+ 1806  emacs ligodb.sh
+ 1807  ./ligodb.sh dev
+ 1808  ./ligodb.sh prod
+ 1809  git status
+ 1810  git add -A
+ 1811  git commit -m "added script to ease postgres datababase access"
+ 1812  git push ligosphere master
+ 1813  ./ligodb dev
+ 1814  ./ligodb.sh dev
+ 1815  ./ligodb.sh prod
+ 1816  man history
+ 1817  history
+ 1818  man history
+ 1819  cat ~/.history
+ 1820  man history
+ 1821  ls
+ 1822  cd ..
+ 1823  ls
+ 1824  pico newproject.sh
+ 1825  cd ~/code
+ 1826  mvn archetype:generate -DgroupId=com.ligo.dwhello -DartifactId=dwhello -DarchetypeArtifactId=maven-archetype-quickstart -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DinteractiveMode=false
+ 1827  ls
+ 1828  cd dwhello
+ 1829  git init
+ 1830  git remote add origin https://github.com/LigoSphere/dwhello.git
+ 1831  git remote -v
+ 1832  git pull origin master
+ 1833  cd src/main/java/com
+ 1834  ls
+ 1835  cd ligo
+ 1836  ls
+ 1837  cd dwhello
+ 1838  cd ~/code/dwhello/src/main/java/com/ligo/dwhello
+ 1839  mv App.java dwhello.java
+ 1840  pico dwhello.java
+ 1841  cd ~/code/dwhello/src/test/java/com/ligo/dwhello
+ 1842  mv AppTest DwHelloTest.java
+ 1843  mv AppTest.java DwHelloTest.java
+ 1844  pico DwHelloTest.java
+ 1845  cd ~/code/dwhello/src/main/java/com/ligo/dwhello
+ 1846  mv dwhello.java DwHello.java
+ 1847  pick DwHello.java
+ 1848  pico DwHello.java
+ 1849  cd ~/code/dwhello
+ 1850  pico pom.xml
+ 1851  mvn package
+ 1852  pico dwhello.sh
+ 1853  chmod 700 dwhello.sh
+ 1854  ./dwhello.sh
+ 1855  git add -A
+ 1856  git commit -m "Initial commit"
+ 1857  git push origin master
+ 1858  ls
+ 1859  cd ..
+ 1860  history > newproject.sh
+ 1861  pico newproject.sh
+ 1862  chmod 777 newproject.sh
+ 1863  ls
+ 1864  cd dwhello
+ 1865  cd ..
+ 1866  cd dropwizard
+ 1867  mkdir dropwizard
+ 1868  cd dropwizard
+ 1869  git pull origin master
+ 1870  git init
+ 1871  git remote origin https://github.com/LigoSphere/dropwizard.git
+ 1872  git remote add origin https://github.com/LigoSphere/dropwizard.git
+ 1873  git remote -v
+ 1874  git pull origin master
+ 1875  ls
+ 1876  cd dropwizard-example
+ 1877  ls
+ 1878  cd ~/code/dwhello
+ 1879  ls
+ 1880  cd src
+ 1881  ls
+ 1882  cd main
+ 1883  cd com/ligo
+ 1884  ls
+ 1885  cd java
+ 1886  ls
+ 1887  cd com/ligo
+ 1888  ls
+ 1889  cd dwhello
+ 1890  ls
+ 1891  cp ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/HelloWorldConfiguration.java
+ 1892  cp ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/HelloWorldConfiguration.java ./HelloWorldConfiguration.java
+ 1893  ls
+ 1894  cd ~/code/dwhello
+ 1895  ls
+ 1896  cp ~/code/dropwizard/dropwizard-example/example.yml ./example.yml
+ 1897  ls
+ 1898  ls ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/HelloWorldApplication.java
+ 1899  cp ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/HelloWorldApplication.java ./DwHelloApplication.java
+ 1900  rm DwHelloApplication.java
+ 1901  cd ~/code/dwhello/
+ 1902  ls
+ 1903  cd src/java/com/ligo/dwhello
+ 1904  cd src
+ 1905  l
+ 1906  ls
+ 1907  cd main
+ 1908  ls
+ 1909  cd java
+ 1910  l
+ 1911  ls
+ 1912  cd com
+ 1913  ls
+ 1914  cd ligo/dwhello
+ 1915  cp ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/HelloWorldApplication.java ./DwHelloApplication.java
+ 1916  mkdir core
+ 1917  cd core
+ 1918  mkdir ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/core/Saying.java ./Saying.java
+ 1919  cp ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/core/Saying.java ./Saying.java
+ 1920  ls
+ 1921  cp Saying.java/Saying.java
+ 1922  cp Saying.java/Saying.java .
+ 1923  cd Saying.java
+ 1924  ls
+ 1925  cp Saying.java ../Saying
+ 1926  cd ..
+ 1927  ls
+ 1928  rmdir Saying.java
+ 1929  cd Saying.java
+ 1930  ls
+ 1931  rm Saying.java
+ 1932  cd ..
+ 1933  rmdir Saying.java
+ 1934  ls
+ 1935  mv Saying Saying.java
+ 1936  ls
+ 1937  cd ..
+ 1938  mkdir resources
+ 1939  cd resources
+ 1940  cp ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/core/HelloWorldResource.java .
+ 1941  cp ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/core/HelloWorldResource.java HelloWorldResource.java
+ 1942  cp ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/resources/HelloWorldResource.java HelloWorldResource.java
+ 1943  ls
+ 1944  mv HelloWorldResource.java DwHelloResource.java
+ 1945  cd ..
+ 1946  mkdir health
+ 1947  cd health
+ 1948  cp ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/health/HealthCheck.java HealthCheck.java
+ 1949  cp ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/health/TemplateHealthCheck.java TemplateHealthCheck.java
+ 1950  cd ~/code/dwhello
+ 1951  ls
+ 1952  mvn package
+ 1953  cd src/main/java/com/ligo/dwhello/core
+ 1954  ls
+ 1955  cp ~/code/dropwizard/dropwizard-example/src/main/java/com/example/helloworld/core/Template.java Template.java
+ 1956  mvn package
+ 1957  cd ~/code/dwhello
+ 1958  mvn package
+ 1959  ls target
+ 1960  java -jar target/dwhello-1.0-SNAPSHOT.jar
+ 1961  java -jar target/dwhello-1.0-SNAPSHOT.jar server dwhello.yml
+ 1962  git status
+ 1963  git add -A
+ 1964  git commit -m "Checking in initial basic Dropwizard Hello World application"
+ 1965  git push origin master
+ 1966  java -jar target/dwhello-1.0-SNAPSHOT.jar server dwhello.yml
+ 1967  ./dwhello.sh
+ 1968  mvn -version
+ 1969  file
+ 1970  file /etc/alternatives/java
+ 1971  file /etc/alternatives/javac
+ 1972  java -version
+ 1973  git -version
+ 1974  git --version
+ 1975  git add -A
+ 1976  git commit -m "Updated README.md to provide basic build and run instructions"
+ 1977  git push origin master
+ 1978  exit
+ 1979  tmux man
+ 1980  man tmux
+ 1981  quit
+ 1982  exit
+ 1983  ssh -i ligodecker.pem ubuntu@54.88.52.88
+ 1984  tmux
+ 1985  ls
+ 1986  cd code
+ 1987  ls
+ 1988  cd java
+ 1989  ls
+ 1990  ./ligodb prod
+ 1991  ./ligodb.sh prod
+ 1992  ssh -i ligodecker.pem ubuntu@54.88.52.88
+ 1993  cd ..
+ 1994  man tmux
+ 1995  ssh -i ligodecker.pem ubuntu@54.88.52.88
+ 1996  cd code/dwhello
+ 1997  ls
+ 1998  ./dwhello.sh
+ 1999  git status
+ 2000  git checkout -b swagger
+ 2001  ls
+ 2002  git push -u origin swagger
+ 2003  git checkout -b master
+ 2004  git checkout master
+ 2005  git checkout swagger
+ 2006  git checkout master
+ 2007  git remote -v
+ 2008* git checkout 
+ 2009  ls
+ 2010  history > myhistory.txt
