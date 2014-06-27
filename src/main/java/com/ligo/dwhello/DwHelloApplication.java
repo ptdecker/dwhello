@@ -9,7 +9,6 @@ import com.ligo.dwhello.resources.*;
 import com.ligo.dwhello.health.TemplateHealthCheck;
 
 import io.dropwizard.Application;
-//import io.dropwizard.Service;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
@@ -22,35 +21,11 @@ import com.wordnik.swagger.reader.*;
 import com.wordnik.swagger.jaxrs.reader.DefaultJaxrsApiReader;
 
 
-//   ** These seem to be old before 'com.yammer.dropwizard' became 'io.dropwizard'
-//import com.yammer.dropwizard.Service;
-//import com.yammer.dropwizard.config.Bootstrap;
-//import com.yammer.dropwizard.config.Environment;
-
-//import com.ligo.dwhello.auth.ExampleAuthenticator;
-//import com.ligo.dwhello.cli.RenderCommand;
-//import com.ligo.dwhello.core.Person;
-//import com.ligo.dwhello.core.Template;
-//import com.ligo.dwhello.db.PersonDAO;
-//import io.dropwizard.assets.AssetsBundle;
-//import io.dropwizard.auth.basic.BasicAuthProvider;
-//import io.dropwizard.db.DataSourceFactory;
-//import io.dropwizard.hibernate.HibernateBundle;
-//import io.dropwizard.migrations.MigrationsBundle;
-//import io.dropwizard.views.ViewBundle;
-
 public class DwHelloApplication extends Application<DwHelloConfiguration> {
-    
+
     public static void main(String[] args) throws Exception {
         new DwHelloApplication().run(args);
     }
-
-//    private final HibernateBundle<DwHelloConfiguration> hibernateBundle = new HibernateBundle<DwHelloConfiguration>(Person.class) {
-//        @Override
-//        public DataSourceFactory getDataSourceFactory(DwHelloConfiguration configuration) {
-//            return configuration.getDataSourceFactory();
-//        }
-//    }
 
     @Override   
     public String getName() {
@@ -61,16 +36,7 @@ public class DwHelloApplication extends Application<DwHelloConfiguration> {
 
     @Override
     public void initialize(Bootstrap<DwHelloConfiguration> bootstrap) {
-//        bootstrap.addCommand(new RenderCommand());
-//        bootstrap.addBundle(new AssetsBundle());
-//        bootstrap.addBundle(new MigrationsBundle<DwHelloConfiguration>() {
-//            @Override
-//            public DataSourceFactory getDataSourceFactory(DwHelloConfiguration configuration) {
-//                return configuration.getDataSourceFactory();
-//           }
-//        });
-//        bootstrap.addBundle(hibernateBundle);
-//        bootstrap.addBundle(new ViewBundle());
+        // Do nothing for now
     }
 
     @Override
@@ -78,21 +44,9 @@ public class DwHelloApplication extends Application<DwHelloConfiguration> {
 
         final DwHelloResource resource = new DwHelloResource(configuration.getTemplate(), configuration.getDefaultName());
         final TemplateHealthCheck healthCheck = new TemplateHealthCheck(configuration.getTemplate());
-//        final PersonDAO dao = new PersonDAO(hibernateBundle.getSessionFactory());
-//        final Template template = configuration.buildTemplate();
 
         environment.healthChecks().register("template", healthCheck);
-//        environment.healthChecks().register("template", new TemplateHealthCheck(template));
         environment.jersey().register(resource);
-//        environment.jersey().register(new BasicAuthProvider<>(new ExampleAuthenticator(), "SUPER SECRET STUFF"));
-//        environment.jersey().register(new DwHelloResource(template));
-//        environment.jersey().register(new ViewResource());
-//        environment.jersey().register(new ProtectedResource());
-//        environment.jersey().register(new PeopleResource(dao));
-//        environment.jersey().register(new PersonResource(dao));
-
-
-//    environment.addResource(new PetResource());  <- Most certainly is not needed as this is from the Swagger sample files
 
         /* Set up resources and providers needed to support Swagger */
 
@@ -102,8 +56,14 @@ public class DwHelloApplication extends Application<DwHelloConfiguration> {
         ScannerFactory.setScanner(new DefaultJaxrsScanner());
         ClassReaders.setReader(new DefaultJaxrsApiReader());
 
+        /* Handle some Swagger config settings */
+//TODO Remove API version hardcoding
+//TODO Remove host hardcoding
+
+
         SwaggerConfig config = ConfigFactory.config();
         config.setApiVersion("1.0.1");
         config.setBasePath("http://localhost:8000");
     }
+
 }
