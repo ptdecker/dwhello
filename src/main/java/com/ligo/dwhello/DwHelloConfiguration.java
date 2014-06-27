@@ -10,6 +10,7 @@ import io.dropwizard.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.NotEmpty;
 
+//import com.yammer.dropwizard.config.Configuration;  <- this seems to be old, before 'com.yammer.dropwizard.config' became 'io.dropwizard'
 //import com.ligo.dwhello.core.Template;
 //import io.dropwizard.db.DataSourceFactory;
 //import javax.validation.Valid;
@@ -21,7 +22,8 @@ public class DwHelloConfiguration extends Configuration {
     private String template;
 
     @NotEmpty
-    private String defaultName = "Stranger";
+//    @JsonProperty  <-- perhaps this line is needed?
+    private String defaultName = "Stranger-Swagger";
 
 //    @Valid
 //    @NotNull

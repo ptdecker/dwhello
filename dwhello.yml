@@ -1,6 +1,6 @@
 template: Hello, %s!
 
-defaultName: Stranger
+defaultName: Stranger-Swagger
 
 # Database settings.
 #database:
