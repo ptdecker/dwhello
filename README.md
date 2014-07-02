@@ -5,13 +5,10 @@ Dropwizard Basic Getting Started "Hello World" With Integrated Swagger Support
 
 This is a the basic ["Hello World" application](https://dropwizard.github.io/dropwizard/getting-started.html) that utilizes the [Dropwizard](https://dropwizard.github.io/dropwizard/) framework. It has been further augmented to include [Swagger's Dropwizard Quickstart](https://github.com/wordnik/swagger-core/wiki/JavaDropwizard-Quickstart) updated to support Dropwizard 0.7
 
-To run it after compiling it from source:
+To clone, complie from source, and run it:
 
-    $ mkdir -p ~/code/dwhello
-    $ cd ~/code/dwhello
-    $ git init
-    $ git remote add origin https://github.com/LigoSphere/dwhello.git
-    $ git pull origin master
+    $ git clone https://github.com/LigoSphere/dwhello.git
+    $ cd dwhello
     $ mvn package
     $ ./dwhello.sh
 
